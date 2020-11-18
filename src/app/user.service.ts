@@ -29,7 +29,7 @@ export class UserService {
     const status = new ReplaySubject<Status>();
 
     const request = this.http
-      .get<User>(`https://swapi.co/api/people/${userId}`)
+      .get<User>(`https://swapi.dev/api/people/${userId}/`)
       .pipe(
         delay(2000), // artificial delay
         retry(2),
