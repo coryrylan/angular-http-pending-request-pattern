@@ -8,6 +8,7 @@ import { UserService, User, Pending, Status } from './user.service';
 @Component({
   selector: 'app-root',
   standalone: true,
+  providers: [UserService],
   imports: [CommonModule, HttpClientModule],
   template: `
     <a href="https://coryrylan.com/blog/angular-http-pending-request-pattern">
